@@ -33,6 +33,22 @@ h2 {
 }
 
 #qchoice {
+    margin-top: 1%;
+    margin-bottom: 1%;
     text-align: center;
-    padding-left: 15%;
+}
+
+#submit-button {
+    color: black;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1%;
+}
+
+#submit-button:hover {
+    background-color: magenta;
+    border: 1px solid black;
+    color: white;
 }
