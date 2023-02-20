@@ -15,7 +15,6 @@ function checkQuestions() {
 
     if (question1 === "Back") {
         correct ++;
-    } else {   
     }
     if (question2 === "Leg") {
         correct ++;
@@ -51,6 +50,12 @@ var scoreMessage = [
     "Awwww ... Hit the books to improve your score!"
 ];
 
+var images = [
+    "assets/images/excellent.jpg",
+    "assets/images/goodjob.jpg",
+    "assets/images/awwww.jpg"
+]
+
 var scoreTallyUp;
     
     if (correct <=4) {
@@ -66,6 +71,6 @@ var scoreTallyUp;
 document.getElementById("submit-area").style.visibility = "visible";
 document.getElementById("score-tally").innerHTML = "Your score is " + correct +" correct out of 10.";
 document.getElementById("score-message").innerHTML = scoreMessage[scoreTallyUp];
-
+document.getElementById("result-image").src = images[scoreTallyUp];
 
 }
