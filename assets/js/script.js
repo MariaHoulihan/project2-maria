@@ -43,6 +43,30 @@ function checkQuestions() {
         correct ++;
     }
 
+var scoreMessage = [
+    "Excellent score! :D", 
+    "Almost there! :)", 
+    "Good score. Keep up the study", 
+    "Awwww ... Hit the books to improve your score!"
+];
+
+var scoreGrouping;
+    
+    if (correct <=3) {
+        scoreGrouping = 3;
+    }
+    if (correct >=4 && correct <=6) {
+        scoreGrouping = 2;
+    }
+    if (correct >=7 && correct <=8) {
+        scoreGrouping = 1;
+    }
+    if (correct >8) {
+        scoreGrouping = 0;
+    }
+
+
 document.getElementById("submit-area").style.visibility = "visible";
 document.getElementById("score-tally").innerHTML = "Your score is " + correct +" correct out of 10.";
+document.getElementById("score-message").innerHTML = scoreMessage[scoreGrouping];
 }
