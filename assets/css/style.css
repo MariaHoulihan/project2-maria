@@ -19,6 +19,7 @@ h2 {
 p {
     font-size: 20px;
 }
+
 /* main image styling */
 .main-image {
     width: 75%;
@@ -27,7 +28,7 @@ p {
     margin-top: 1%;
     text-align: center;
 }
-
+/* quiz area styling */
 #quiz {
     width: 75%;
     margin-left: auto;
@@ -43,6 +44,7 @@ p {
     display: inline-flex;
 }
 
+/* submit button styling */
 #submit-button {
     color: black;
     background-color: aqua;
@@ -56,4 +58,8 @@ p {
     background-color: magenta;
     border: 1px solid black;
     color: white;
+}
+
+#submit-area {
+    visibility: hidden;
 }
