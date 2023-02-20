@@ -11,9 +11,11 @@ function checkQuestions() {
     var question10 = document.quiz.question10.value;
 
     var correct = 0;
+    var incorrect = 0;
 
     if (question1 === "Back") {
         correct ++;
+    } else {   
     }
     if (question2 === "Leg") {
         correct ++;
@@ -45,28 +47,25 @@ function checkQuestions() {
 
 var scoreMessage = [
     "Excellent score! :D", 
-    "Almost there! :)", 
-    "Good score. Keep up the study", 
+    "Good score. Keep up the good work :)", 
     "Awwww ... Hit the books to improve your score!"
 ];
 
-var scoreGrouping;
+var scoreTallyUp;
     
-    if (correct <=3) {
-        scoreGrouping = 3;
+    if (correct <=4) {
+        scoreTallyUp = 2;
     }
-    if (correct >=4 && correct <=6) {
-        scoreGrouping = 2;
+    if (correct >4 && correct <=7) {
+        scoreTallyUp = 1;
     }
-    if (correct >=7 && correct <=8) {
-        scoreGrouping = 1;
+    if (correct >7) {
+        scoreTallyUp = 0;
     }
-    if (correct >8) {
-        scoreGrouping = 0;
-    }
-
 
 document.getElementById("submit-area").style.visibility = "visible";
 document.getElementById("score-tally").innerHTML = "Your score is " + correct +" correct out of 10.";
-document.getElementById("score-message").innerHTML = scoreMessage[scoreGrouping];
+document.getElementById("score-message").innerHTML = scoreMessage[scoreTallyUp];
+
+
 }
