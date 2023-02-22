@@ -68,6 +68,7 @@ var scoreTallyUp;
         scoreTallyUp = 0;
     }
 
+
 document.getElementById("submit-area").style.visibility = "visible";
 document.getElementById("score-tally").innerHTML = "Your score is " + correct +" correct out of 10.";
 document.getElementById("score-message").innerHTML = scoreMessage[scoreTallyUp];
