@@ -67,7 +67,12 @@ p {
 
 #submit-area {
     visibility: hidden;
-    font-size: 40px;
+}
+
+#score-message {
+    text-decoration: wavy;
+    text-transform: capitalize;
+    text-shadow: 2%;
 }
 
 #result-image {
