@@ -18,13 +18,31 @@
     <h2>Studying anatomy, physiology or interested in this subject area? <br>Take our short quiz to test your knowledge!</h2>
 <!--quiz area-->
 
-<!--NEED TO FIGURE OUT HOW TO MAKE THE REQUIRED WORK HERE SO THAT WVEWRY QUESTION MUST BE ANSWERED -->
+<section id="quiz">
+"<!--NEED TO FIGURE OUT HOW TO MAKE THE REQUIRED WORK HERE SO THAT WVEWRY QUESTION MUST BE ANSWERED -->
 <form id = "quiz" name = "quiz" action = "/form/submit/" method="POST">
-      <p>1. The occipital area of the skull is located in what part of the skull?</p>
-      <label>
-        <input type = "radio" required id = "qchoice" name = "question1" value="Front">Front
+    <p>1. The occipital area of the skull is located in what part of the skull?</p>
+        <label for "Front">Front> 
+          <input type = "radio" id = "qchoice" name = "question1" value="Front" required>Front
     </label><br>
       <label>
+
+
+        <section class="form-section">
+          <form action = "/form/submit" method="POST">
+              <h2>Let's get you signed up!</h2>
+              
+              <label for="road">Road</label>
+              <input id="road" type="radio" name="running_preference" value="road" required>
+              <label for="trail">Trail</label>
+              <input id="trail" type="radio" name="running_preference" value="trail">
+              <label for="both">Both</label>
+              <input id="both" type="radio" name="running_preference" value="both">
+              <input type="submit" value="Let's Run!">
+            </form>
+          
+      </section>
+
         <input type = "radio" id = "qchoice" name = "question1" value="Back">Back
     </label><br>
       <label>
