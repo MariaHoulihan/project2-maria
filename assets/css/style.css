@@ -1,7 +1,7 @@
 body {
     font-family: Montserat, sans-serif;
     font-weight: 300;
-    color: black;
+    color: #000000;
     background-color: lightgreen;
     text-align: center;
 }
@@ -64,8 +64,10 @@ p {
 }
 
 /* score tally and message area */
+
 #submit-area {
     visibility: hidden;
+    font-size: 40px;
 }
 
 #result-image {
@@ -76,10 +78,8 @@ p {
     text-align: center;
 }
 
-/* back to top of page styling */
 #backToTop:hover {
-    color: white;
-    font-size: 20px;
     background-color: magenta;
-    border: solid;
+    border: 1px solid black;
+    color: white;
 }
