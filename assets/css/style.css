@@ -69,10 +69,10 @@ p {
     visibility: hidden;
 }
 
+/* I want to increase size and appearance of the message under the score result after the submit button is pressed
+how can i do this ???? */
 #score-message {
-    text-decoration: wavy;
-    text-transform: capitalize;
-    text-shadow: 2%;
+    
 }
 
 #result-image {
