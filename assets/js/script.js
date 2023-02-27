@@ -18,82 +18,61 @@ function checkQuestions() {
     const question9 = document.quiz.question9.value;
     const question10 = document.quiz.question10.value;
 
-    var correct = 0;
+    let correct = 0;
+    let incorrect = 0;
 
-
-       switch(quizForm){
-        case 1:
-            question1 === "Back"  
-            correct ++; 
-            break;
-        case 2:
-            question2 === "Leg"  
-            correct ++; 
-            break;
-        case 3:
-            question3 === "Hinge"
-            correct ++;
-            break;
-        case 4:
-            question4 === "Quadriceps"
-            correct ++;
-            break;
-        case 5:
-            question5 === "Atlas"
-            correct ++;
-            break;
-        case 6:
-            question6 === "Talus"
-            correct ++;
-            break;
-        case 7:
-            question7 === "Pulmonary Artery"
-            correct ++;
-            break;
-        case 8:
-            question8 === "Connective Tissue"
-            correct ++;
-            break;
-        case 9:
-            question9 === ""
-            correct ++;
-            break;
-        case 10:
-            question10 === ""
-            correct ++;
-            break;
-    } 
-
-   /* if (question1 === "Back") {
+   if (question1 === "Back") {
         correct++;
-    }
+    } else {
+        incorrect++;
+        }
+      
     if (question2 === "Leg") {
         correct++;
-    }
+    } else {
+        incorrect++;
+        }
     if (question3 === "Hinge") {
         correct++;
+    } else {
+        incorrect++;
+    
     }
     if (question4 === "Quadriceps") {
         correct++;
-    }
+    } else {
+        incorrect++;
+        }
     if (question5 === "Atlas") {
         correct++;
-    }
+    } else {
+        incorrect++;
+        }
     if (question6 === "Talus") {
         correct++;
-    }
+    } else {
+        incorrect++;
+        }
     if (question7 === "Pulmonary Artery") {
         correct++;
+    } else {
+        incorrect++;
     }
     if (question8 === "Connective Tissue") {
         correct++;
+    } else {
+        incorrect++;
     }
     if (question9 === "Cephalic") {
         correct++;
+    } else {
+        incorrect++;
     }
     if (question10 === "Chewing") {
         correct++;
-    }*/
+    } else {
+        incorrect++;
+    }
 
     var scoreMessage = [
         "Excellent score! Way to go!! :D",
@@ -122,6 +101,7 @@ function checkQuestions() {
 
     document.getElementById("submit-area").style.visibility = "visible";
     document.getElementById("score-tally").innerHTML = "Your score is " + correct + " correct out of 10.";
+    document.getElementById("incorrect-tally").innerHTML = "Your have " + incorrect + " incorrect out of 10.";
     document.getElementById("score-message").innerHTML = scoreMessage[scoreTallyUp];
     document.getElementById("result-image").src = images[scoreTallyUp];
 }

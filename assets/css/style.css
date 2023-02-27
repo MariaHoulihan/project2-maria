@@ -10,6 +10,7 @@ h1, h2 {
     text-align: center;
     background-color: cornflowerblue;
     padding: 2%;
+    border-radius: 20px;
 }
 
 h2 {
@@ -55,6 +56,7 @@ p {
     font-size: 20px;
     margin-top: 2%;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #submit-button:hover {
@@ -72,7 +74,7 @@ p {
 /* I want to increase size and appearance of the message under the score result after the submit button is pressed
 how can i do this ???? */
 #score-message {
-    
+    font-size: 40;
 }
 
 #result-image {
