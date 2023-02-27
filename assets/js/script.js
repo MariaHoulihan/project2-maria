@@ -25,8 +25,7 @@ function checkQuestions() {
         correct++;
     } else {
         incorrect++;
-        }
-      
+        }      
     if (question2 === "Leg") {
         correct++;
     } else {
@@ -35,8 +34,7 @@ function checkQuestions() {
     if (question3 === "Hinge") {
         correct++;
     } else {
-        incorrect++;
-    
+        incorrect++;  
     }
     if (question4 === "Quadriceps") {
         correct++;
@@ -97,7 +95,6 @@ function checkQuestions() {
     if (correct > 7) {
         scoreTallyUp = 0;
     }
-
 
     document.getElementById("submit-area").style.visibility = "visible";
     document.getElementById("score-tally").innerHTML = "Your score is " + correct + " out of 10!";
