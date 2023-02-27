@@ -4,7 +4,7 @@ const quizForm = document.getElementById("quiz-form");
 quizForm.addEventListener("submit", function (event) {
     event.preventDefault();
     checkQuestions();
-})
+});
 
 function checkQuestions() {
     const question1 = document.quiz.question1.value;
@@ -84,7 +84,7 @@ function checkQuestions() {
         "assets/images/excellent.jpg",
         "assets/images/goodjob.jpg",
         "assets/images/awwww.jpg"
-    ]
+    ];
 
     var scoreTallyUp;
 
@@ -100,8 +100,8 @@ function checkQuestions() {
 
 
     document.getElementById("submit-area").style.visibility = "visible";
-    document.getElementById("score-tally").innerHTML = "Your score is " + correct + " correct out of 10.";
-    document.getElementById("incorrect-tally").innerHTML = "Your have " + incorrect + " incorrect out of 10.";
+    document.getElementById("score-tally").innerHTML = "Your score is " + correct + " out of 10!";
+    document.getElementById("incorrect-tally").innerHTML = "Incorrect " + incorrect + " out of 10 :(";
     document.getElementById("score-message").innerHTML = scoreMessage[scoreTallyUp];
     document.getElementById("result-image").src = images[scoreTallyUp];
 }

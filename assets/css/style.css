@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* main image styling */
@@ -71,10 +71,19 @@ p {
     visibility: hidden;
 }
 
-/* I want to increase size and appearance of the message under the score result after the submit button is pressed
-how can i do this ???? */
+#score-tally {
+    font-size: 25px;
+    color: blueviolet;
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
 #score-message {
-    font-size: 40;
+    font-size: 30px;
 }
 
 #result-image {
